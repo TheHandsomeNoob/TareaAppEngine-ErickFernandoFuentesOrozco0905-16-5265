@@ -1,0 +1,14 @@
+runtime: php
+env: flex
+
+runtime_config:
+  document_root: proyectogc
+  
+  
+env_variables:
+  CLOUDSQL_DSN: mysql:unix_socket=/cloudsql/proyectonuevo-250604:us-east1:usuario;dbname=dbpaginasweb
+  CLOUDSQL_USER: root
+  CLOUDSQL_PASSWORD: ""
+  
+beta_settings:
+  cloud_sql_instances: "proyectonuevo-250604:us-east1:usuario"
